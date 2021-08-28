@@ -33,5 +33,10 @@ module OwaraiJudgeApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.generators do |g|
+      g.assets false
+      g.test_framework false
+    end
   end
 end

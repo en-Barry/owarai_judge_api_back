@@ -10,16 +10,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_27_093232) do
+ActiveRecord::Schema.define(version: 2021_08_28_122115) do
 
   create_table "contests", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.integer "name", default: 0, null: false
     t.integer "year", null: false
-    t.string "judge", null: false
-    t.string "finalist", null: false
-    t.integer "score", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "finalists", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "judgements", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "contest_id", null: false
+    t.bigint "judge_id", null: false
+    t.bigint "finalist_id", null: false
+    t.integer "score", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["contest_id"], name: "index_judgements_on_contest_id"
+    t.index ["finalist_id"], name: "index_judgements_on_finalist_id"
+    t.index ["judge_id"], name: "index_judgements_on_judge_id"
+  end
+
+  create_table "judges", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "category", default: 0, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.integer "age"
+    t.integer "gender"
+    t.bigint "judge_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["judge_id"], name: "index_profiles_on_judge_id"
+  end
+
+  add_foreign_key "judgements", "contests"
+  add_foreign_key "judgements", "finalists"
+  add_foreign_key "judgements", "judges"
+  add_foreign_key "profiles", "judges"
 end
