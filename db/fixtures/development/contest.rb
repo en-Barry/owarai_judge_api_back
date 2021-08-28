@@ -88,7 +88,7 @@ Contest.seed_once(:id,
 )
 
 # キングオブコント name: 1
-Contest.seed(
+Contest.seed_once(:id,
   {
     id: 30,
     name: 1,
