@@ -127,3 +127,15 @@ Contest.seed_once(:id,
 )
 
 # R-1グランプリ name: 2
+Contest.seed_once(
+  {
+    id: 60,
+    name: 2,
+    year:2020
+  },
+  {
+    id: 61,
+    name: 2,
+    year:2021
+  }
+)
