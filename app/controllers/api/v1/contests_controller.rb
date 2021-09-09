@@ -1,5 +1,6 @@
 class Api::V1::ContestsController < ApplicationController
-
+  skip_before_action :set_judge
+  
   def m_1gp
     contests = Contest.where(name: 0).order(id: :DESC).pluck(:id, :name, :year).map { |id, name, year| { id: id, name: name, year: year }}
     render json: contests
