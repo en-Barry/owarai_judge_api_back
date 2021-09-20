@@ -1,6 +1,6 @@
 # キングオブコント2020
 Judgement.seed_once(:contest_id, :judge_id, :finalist_id,
-  # 滝音
+  #2020　#滝音
   {
     id: 1,
     contest_id: 35,
@@ -320,5 +320,11 @@ Judgement.seed_once(:contest_id, :judge_id, :finalist_id,
     judge_id: 5, # バナナマン設楽
     finalist_id: 10,
     score: 92
+  },#2019 #うるとらブギーズ
+  {
+    contest_id: 34,
+    judge_id: 1, # 松本人志
+    finalist_id: 7,
+    score: 90
   }
 )
