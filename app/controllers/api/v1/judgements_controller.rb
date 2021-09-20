@@ -1,13 +1,11 @@
 class Api::V1::JudgementsController < ApplicationController
+  skip_before_action :set_judge
   before_action :set_judgement, only: %i[update destroy]
 
-  def index
-    judgements = Judgement.all
-    render json: judgements
-  end
-
   def create
-    judgement = Judgement.new(judgement_params)
+    judgement = Judgement.new(judge_id: current_judge.id) if current_judge.present?
+    judgement.attributes = judgement_params
+    
     if judgement.save
       render json: judgement
     else
@@ -29,6 +27,19 @@ class Api::V1::JudgementsController < ApplicationController
     else
       render json: @judgement.errors
     end
+  end
+
+  def m_1gp
+    
+  end
+
+  def king_of_conte
+    judgements = Judgement.where(contest_id: params[:id]).order(id: :ASC).pluck(:contest_id, :judge_id, :finalist_id, :score).map { |contest_id, judge_id, finalist_id, score | { contest_id: contest_id, judge_id: judge_id, finalist_id: finalist_id, score: score  }}
+    render json: judgements
+  end
+
+  def r_1gp
+    
   end
 
   private
