@@ -12,6 +12,7 @@ class Judgement < ApplicationRecord
     my_result = judgements.my_judge(current_judge.id)
     other_results =  [ other_results: judgements.other_judges_average ]
     finalists_name = [ finalists_name: Finalist.where(id: judgements.distinct.pluck(:finalist_id)).map { |finalist| {id: finalist.id, name: finalist.name} } ]
+    judges_count = [ count: judgements.distinct.pluck(:judge_id).length ]
 
     if (30..35).cover?(contest_id)
       judges_name = [ judges_name: Judge.where(id: 1..5).map { |judge| {id: judge.id, name: judge.name} } ]
@@ -22,6 +23,6 @@ class Judgement < ApplicationRecord
     end
 
     official_and_me = [official_results, my_result].flatten!
-    all_results = other_results + finalists_name + judges_name + official_and_me
+    all_results = other_results + finalists_name + judges_name + official_and_me + judges_count
   end
 end
