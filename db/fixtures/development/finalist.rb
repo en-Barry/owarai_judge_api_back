@@ -1,4 +1,4 @@
-Finalist.seed_once(
+Finalist.seed_once(:id,
   {
     id: 1,
     name: '滝音'
