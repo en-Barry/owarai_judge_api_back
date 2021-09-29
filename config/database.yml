@@ -18,7 +18,7 @@ default: &default
 development:
   <<: *default
   database: owarai_judge_api_development
-  password: <%= ENV.fetch("MYSQL_PASS") %>
+  # password: <%= ENV.fetch("MYSQL_PASS") %>
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -27,7 +27,7 @@ development:
 test:
   <<: *default
   database: owarai_judge_api_test
-  password: <%= ENV.fetch("MYSQL_PASS") %>
+  # password: <%= ENV.fetch("MYSQL_PASS") %>
   host: localhost
 
 # As with config/credentials.yml, you never want to store sensitive information,
