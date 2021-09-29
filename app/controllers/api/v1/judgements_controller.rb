@@ -1,6 +1,5 @@
 class Api::V1::JudgementsController < ApplicationController
   before_action :set_judgement, only: %i[update destroy]
-  skip_before_action :set_judge
 
   def create
     judgements = judgements_params.to_h
