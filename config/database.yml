@@ -51,6 +51,6 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: owarai_judge_api_production
   username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
