@@ -11,6 +11,7 @@ gem 'mysql2', '>= 0.4.4'
 gem 'puma', '~> 4.1'
 
 gem 'rack-cors'
+gem 'rails_same_site_cookie'
 
 gem 'seed-fu'
 
