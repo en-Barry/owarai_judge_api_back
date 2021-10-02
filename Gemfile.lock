@@ -89,8 +89,6 @@ GEM
     nokogiri (1.12.3)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
-    order_as_specified (1.7)
-      activerecord (>= 5.0.0)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -170,7 +168,6 @@ DEPENDENCIES
   byebug
   listen (~> 3.2)
   mysql2 (>= 0.4.4)
-  order_as_specified
   pry-rails
   puma (~> 4.1)
   rack-cors
