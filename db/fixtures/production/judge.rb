@@ -31,25 +31,25 @@ Judge.seed_once(:id,
   },
   {
     id: 6,
-    name: '未定1',
+    name: '飯塚',
     category: 1,
     judge_digest: ""
   },
   {
     id: 7,
-    name: '未定2',
+    name: '小峠',
     category: 1,
     judge_digest: ""
   },
   {
     id: 8,
-    name: '未定3',
+    name: '秋山',
     category: 1,
     judge_digest: ""
   },
   {
     id: 9,
-    name: '未定4',
+    name: '山内',
     category: 1,
     judge_digest: ""
   }

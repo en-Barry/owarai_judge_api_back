@@ -620,5 +620,305 @@ Judgement.seed_once(:contest_id, :judge_id, :finalist_id,
     judge_id: 5,
     finalist_id: 16,
     score: 87
+  }, # 2020 # 蛙亭
+  {
+    contest_id: 36,
+    judge_id: 1,
+    finalist_id: 17,
+    score: 92
+  },
+  {
+    contest_id: 36,
+    judge_id: 6,
+    finalist_id: 17,
+    score: 93
+  },
+  {
+    contest_id: 36,
+    judge_id: 7,
+    finalist_id: 17,
+    score: 93
+  },
+  {
+    contest_id: 36,
+    judge_id: 8,
+    finalist_id: 17,
+    score: 90
+  },
+  {
+    contest_id: 36,
+    judge_id: 9,
+    finalist_id: 17,
+    score: 93
+  }, # ジェラードン
+  {
+    contest_id: 36,
+    judge_id: 1,
+    finalist_id: 18,
+    score: 93
+  },
+  {
+    contest_id: 36,
+    judge_id: 6,
+    finalist_id: 18,
+    score: 91
+  },
+  {
+    contest_id: 36,
+    judge_id: 7,
+    finalist_id: 18,
+    score: 92
+  },
+  {
+    contest_id: 36,
+    judge_id: 8,
+    finalist_id: 18,
+    score: 96
+  },
+  {
+    contest_id: 36,
+    judge_id: 9,
+    finalist_id: 18,
+    score: 90
+  }, # 男性ブランコ
+  {
+    contest_id: 36,
+    judge_id: 1,
+    finalist_id: 19,
+    score: 91
+  },
+  {
+    contest_id: 36,
+    judge_id: 6,
+    finalist_id: 19,
+    score: 95
+  },
+  {
+    contest_id: 36,
+    judge_id: 7,
+    finalist_id: 19,
+    score: 94
+  },
+  {
+    contest_id: 36,
+    judge_id: 8,
+    finalist_id: 19,
+    score: 96
+  },
+  {
+    contest_id: 36,
+    judge_id: 9,
+    finalist_id: 19,
+    score: 96
+  }, # うるとらブギーズ
+  {
+    contest_id: 36,
+    judge_id: 1,
+    finalist_id: 7,
+    score: 90
+  },
+  {
+    contest_id: 36,
+    judge_id: 6,
+    finalist_id: 7,
+    score: 94
+  },
+  {
+    contest_id: 36,
+    judge_id: 7,
+    finalist_id: 7,
+    score: 93
+  },
+  {
+    contest_id: 36,
+    judge_id: 8,
+    finalist_id: 7,
+    score: 93
+  },
+  {
+    contest_id: 36,
+    judge_id: 9,
+    finalist_id: 7,
+    score: 90
+  }, # ニッポンの社長
+  {
+    contest_id: 36,
+    judge_id: 1,
+    finalist_id: 8,
+    score: 89
+  },
+  {
+    contest_id: 36,
+    judge_id: 6,
+    finalist_id: 8,
+    score: 90
+  },
+  {
+    contest_id: 36,
+    judge_id: 7,
+    finalist_id: 8,
+    score: 94
+  },
+  {
+    contest_id: 36,
+    judge_id: 8,
+    finalist_id: 8,
+    score: 95
+  },
+  {
+    contest_id: 36,
+    judge_id: 9,
+    finalist_id: 8,
+    score: 95
+  }, # そいつどいつ
+  {
+    contest_id: 36,
+    judge_id: 1,
+    finalist_id: 20,
+    score: 95
+  },
+  {
+    contest_id: 36,
+    judge_id: 6,
+    finalist_id: 20,
+    score: 89
+  },
+  {
+    contest_id: 36,
+    judge_id: 7,
+    finalist_id: 20,
+    score: 91
+  },
+  {
+    contest_id: 36,
+    judge_id: 8,
+    finalist_id: 20,
+    score: 89
+  },
+  {
+    contest_id: 36,
+    judge_id: 9,
+    finalist_id: 20,
+    score: 92
+  }, # ニューヨーク
+  {
+    contest_id: 36,
+    judge_id: 1,
+    finalist_id: 9,
+    score: 90
+  },
+  {
+    contest_id: 36,
+    judge_id: 6,
+    finalist_id: 9,
+    score: 92
+  },
+  {
+    contest_id: 36,
+    judge_id: 7,
+    finalist_id: 9,
+    score: 90
+  },
+  {
+    contest_id: 36,
+    judge_id: 8,
+    finalist_id: 9,
+    score: 90
+  },
+  {
+    contest_id: 36,
+    judge_id: 9,
+    finalist_id: 9,
+    score: 91
+  }, # ザ・マミィ
+  {
+    contest_id: 36,
+    judge_id: 1,
+    finalist_id: 21,
+    score: 96
+  },
+  {
+    contest_id: 36,
+    judge_id: 6,
+    finalist_id: 21,
+    score: 93
+  },
+  {
+    contest_id: 36,
+    judge_id: 7,
+    finalist_id: 21,
+    score: 95
+  },
+  {
+    contest_id: 36,
+    judge_id: 8,
+    finalist_id: 21,
+    score: 96
+  },
+  {
+    contest_id: 36,
+    judge_id: 9,
+    finalist_id: 21,
+    score: 96
+  }, # 空気階段
+  {
+    contest_id: 36,
+    judge_id: 1,
+    finalist_id: 4,
+    score: 97
+  },
+  {
+    contest_id: 36,
+    judge_id: 6,
+    finalist_id: 4,
+    score: 97
+  },
+  {
+    contest_id: 36,
+    judge_id: 7,
+    finalist_id: 4,
+    score: 97
+  },
+  {
+    contest_id: 36,
+    judge_id: 8,
+    finalist_id: 4,
+    score: 97
+  },
+  {
+    contest_id: 36,
+    judge_id: 9,
+    finalist_id: 4,
+    score: 98
+  }, # マヂカルラブリー
+  {
+    contest_id: 36,
+    judge_id: 1,
+    finalist_id: 22,
+    score: 94
+  },
+  {
+    contest_id: 36,
+    judge_id: 6,
+    finalist_id: 22,
+    score: 89
+  },
+  {
+    contest_id: 36,
+    judge_id: 7,
+    finalist_id: 22,
+    score: 89
+  },
+  {
+    contest_id: 36,
+    judge_id: 8,
+    finalist_id: 22,
+    score: 91
+  },
+  {
+    contest_id: 36,
+    judge_id: 9,
+    finalist_id: 22,
+    score: 92
   }
 )
