@@ -21,7 +21,7 @@ class Judgement < ApplicationRecord
       judges_name = [ judges_name: Judge.where(id: 1..5).map { |judge| {id: judge.id, name: judge.name} } ]
       official_results = judgements.until20_judges(judgements)
     elsif 36 == contest_id
-      judges_name = [ judges_name: Judge.where(id: 1).or(Judge.where(id: 6..9)).map { |judge| {judge_id: judge.id, judge_name: judge.name} } ]
+      judges_name = [ judges_name: Judge.where(id: 1).or(Judge.where(id: 6..9)).map { |judge| {judge_id: judge.id, name: judge.name} } ]
       official_results = judgements.since21_judges(judgements)
     end
 
