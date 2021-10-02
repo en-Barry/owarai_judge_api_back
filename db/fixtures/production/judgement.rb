@@ -326,5 +326,299 @@ Judgement.seed_once(:contest_id, :judge_id, :finalist_id,
     judge_id: 1, # 松本人志
     finalist_id: 7,
     score: 90
+  },
+  {
+    contest_id: 34,
+    judge_id: 2, # さまぁ〜ず大竹
+    finalist_id: 7,
+    score: 92
+  },
+  {
+    contest_id: 34,
+    judge_id: 3,
+    finalist_id: 7,
+    score: 95
+  },
+  {
+    contest_id: 34,
+    judge_id: 4,
+    finalist_id: 7,
+    score: 95
+  },
+  {
+    contest_id: 34,
+    judge_id: 5,
+    finalist_id: 7,
+    score: 90
+  }, # ネルソンズ
+  {
+    contest_id: 34,
+    judge_id: 1,
+    finalist_id: 11,
+    score: 86
+  },
+  {
+    contest_id: 34,
+    judge_id: 2,
+    finalist_id: 11,
+    score: 90
+  },
+  {
+    contest_id: 34,
+    judge_id: 3,
+    finalist_id: 11,
+    score: 90
+  },
+  {
+    contest_id: 34,
+    judge_id: 4,
+    finalist_id: 11,
+    score: 90
+  },
+  {
+    contest_id: 34,
+    judge_id: 5,
+    finalist_id: 11,
+    score: 90
+  }, # 空気階段
+  {
+    contest_id: 34,
+    judge_id: 1,
+    finalist_id: 4,
+    score: 85
+  },
+  {
+    contest_id: 34,
+    judge_id: 2,
+    finalist_id: 4,
+    score: 90
+
+  },
+  {
+    contest_id: 34,
+    judge_id: 3,
+    finalist_id: 4,
+    score: 88
+  },
+  {
+    contest_id: 34,
+    judge_id: 4,
+    finalist_id: 4,
+    score: 88
+  },
+  {
+    contest_id: 34,
+    judge_id: 5,
+    finalist_id: 4,
+    score: 87
+  }, # ビスケットブラザーズ
+  {
+    contest_id: 34,
+    judge_id: 1,
+    finalist_id: 12,
+    score: 89
+  },
+  {
+    contest_id: 34,
+    judge_id: 2,
+    finalist_id: 12,
+    score: 88
+  },
+  {
+    contest_id: 34,
+    judge_id: 3,
+    finalist_id: 12,
+    score: 90
+  },
+  {
+    contest_id: 34,
+    judge_id: 4,
+    finalist_id: 12,
+    score: 90
+  },
+  {
+    contest_id: 34,
+    judge_id: 5,
+    finalist_id: 12,
+    score: 89
+  }, # ジャルジャル
+  {
+    contest_id: 34,
+    judge_id: 1,
+    finalist_id: 5,
+    score: 93
+  },
+  {
+    contest_id: 34,
+    judge_id: 2,
+    finalist_id: 5,
+    score: 90
+  },
+  {
+    contest_id: 34,
+    judge_id: 3,
+    finalist_id: 5,
+    score: 89
+  }, {
+    contest_id: 34,
+    judge_id: 4,
+    finalist_id: 5,
+    score: 93
+  },
+  {
+    contest_id: 34,
+    judge_id: 5,
+    finalist_id: 5,
+    score: 92
+  }, # どぶろっく
+  {
+    contest_id: 34,
+    judge_id: 1,
+    finalist_id: 13,
+    score: 96
+  },
+  {
+    contest_id: 34,
+    judge_id: 2,
+    finalist_id: 13,
+    score: 97
+  },
+  {
+    contest_id: 34,
+    judge_id: 3,
+    finalist_id: 13,
+    score: 98
+  },
+  {
+    contest_id: 34,
+    judge_id: 4,
+    finalist_id: 13,
+    score: 96
+  },
+  {
+    contest_id: 34,
+    judge_id: 5,
+    finalist_id: 13,
+    score: 93
+  }, # かが屋
+  {
+    contest_id: 34,
+    judge_id: 1,
+    finalist_id: 14,
+    score: 88
+  },
+  {
+    contest_id: 34,
+    judge_id: 2,
+    finalist_id: 14,
+    score: 88
+  },
+  {
+    contest_id: 34,
+    judge_id: 3,
+    finalist_id: 14,
+    score: 87
+  },
+  {
+    contest_id: 34,
+    judge_id: 4,
+    finalist_id: 14,
+    score: 89
+  },
+  {
+    contest_id: 34,
+    judge_id: 5,
+    finalist_id: 14,
+    score: 94
+  }, # GAG
+  {
+    contest_id: 34,
+    judge_id: 1,
+    finalist_id: 2,
+    score: 92
+  },
+  {
+    contest_id: 34,
+    judge_id: 2,
+    finalist_id: 2,
+    score: 93
+  },
+  {
+    contest_id: 34,
+    judge_id: 3,
+    finalist_id: 2,
+    score: 92
+  },
+  {
+    contest_id: 34,
+    judge_id: 4,
+    finalist_id: 2,
+    score: 88
+  },
+  {
+    contest_id: 34,
+    judge_id: 5,
+    finalist_id: 2,
+    score: 92
+  }, # ゾフィー
+  {
+    contest_id: 34,
+    judge_id: 1,
+    finalist_id: 15,
+    score: 92
+  },
+  {
+    contest_id: 34,
+    judge_id: 2,
+    finalist_id: 15,
+    score: 91
+  },
+  {
+    contest_id: 34,
+    judge_id: 3,
+    finalist_id: 15,
+    score: 89
+  },
+  {
+    contest_id: 34,
+    judge_id: 4,
+    finalist_id: 15,
+    score: 90
+  },
+  {
+    contest_id: 34,
+    judge_id: 5,
+    finalist_id: 15,
+    score: 90
+  }, # わらふぢなるお
+  {
+    contest_id: 34,
+    judge_id: 1,
+    finalist_id: 16,
+    score: 89
+  },
+  {
+    contest_id: 34,
+    judge_id: 2,
+    finalist_id: 16,
+    score: 87
+  },
+  {
+    contest_id: 34,
+    judge_id: 3,
+    finalist_id: 16,
+    score: 88
+  },
+  {
+    contest_id: 34,
+    judge_id: 4,
+    finalist_id: 16,
+    score: 87
+  },
+  {
+    contest_id: 34,
+    judge_id: 5,
+    finalist_id: 16,
+    score: 87
   }
 )
