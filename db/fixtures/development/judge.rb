@@ -1,4 +1,4 @@
-Judge.seed_once(:id,
+Judge.seed(:id,
   {
     id: 1,
     name: '松本',
