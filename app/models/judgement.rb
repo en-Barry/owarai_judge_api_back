@@ -11,7 +11,8 @@ class Judgement < ApplicationRecord
   def self.koc_judgements(judgements, current_judge, contest_id)
     my_result = judgements.my_judge(current_judge.id)
     other_results =  [ other_results: judgements.other_judges_average ]
-    finalists_name = [ finalists_name: Finalist.where(id: judgements.distinct.pluck(:finalist_id)).map { |finalist| {id: finalist.id, name: finalist.name} } ]
+    finalist_ids = judgements.distinct.pluck(:finalist_id)
+    finalists_name = [ finalists_name: Finalist.where(id: finalist_ids).order("field(id, #{finalist_ids.join(',')})").map { |finalist| {id: finalist.id, name: finalist.name} } ]
     judges_count = [ count: judgements.distinct.pluck(:judge_id).length ]
 
     if (30..35).cover?(contest_id)
