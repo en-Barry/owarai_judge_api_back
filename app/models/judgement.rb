@@ -2,6 +2,8 @@ class Judgement < ApplicationRecord
   belongs_to :contest
   belongs_to :judge
   belongs_to :finalist
+  
+  validates :score, presence: true, numericality: { in: 70..100 }
 
   scope :until20_judges, -> (judgements){ where(judge_id: 1).or(judgements.where(judge_id: 2..5)).order(id: :ASC).pluck(:judge_id, :finalist_id, :score).map { |judge_id, finalist_id, score | { judge_id: judge_id, finalist_id: finalist_id, score: score  }} }
   scope :since21_judges, -> (judgements){ where(judge_id: 1).or(judgements.where(judge_id: 6..9)).order(id: :ASC).pluck(:judge_id, :finalist_id, :score).map { |judge_id, finalist_id, score | { judge_id: judge_id, finalist_id: finalist_id, score: score  }} }
