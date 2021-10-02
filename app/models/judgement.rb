@@ -8,15 +8,12 @@ class Judgement < ApplicationRecord
   scope :until20_judges, -> (judgements){ where(judge_id: 1).or(judgements.where(judge_id: 2..5)).order(id: :ASC).pluck(:judge_id, :finalist_id, :score).map { |judge_id, finalist_id, score | { judge_id: judge_id, finalist_id: finalist_id, score: score  }} }
   scope :since21_judges, -> (judgements){ where(judge_id: 1).or(judgements.where(judge_id: 6..9)).order(id: :ASC).pluck(:judge_id, :finalist_id, :score).map { |judge_id, finalist_id, score | { judge_id: judge_id, finalist_id: finalist_id, score: score  }} }
   scope :my_judge, -> (set_id){ where(judge_id: set_id).order(id: :ASC).pluck(:judge_id, :finalist_id, :score).map { |judge_id, finalist_id, score | { judge_id: judge_id, finalist_id: finalist_id, score: score  }} }
-  scope :other_judges_average, -> { order("field(finalist_id, #{finalist_ids.join(',')})").group(:finalist_id).average(:score).map { |finalist_id, score| {finalist_id: finalist_id, score: score.round }} }
+  scope :other_judges_average, -> (finalist_ids){ order("field(finalist_id, #{finalist_ids.join(',')})").group(:finalist_id).average(:score).map { |finalist_id, score| {finalist_id: finalist_id, score: score.round }} }
 
   def self.koc_judgements(judgements, current_judge, contest_id)
     my_result = judgements.my_judge(current_judge.id)
-    other_results =  [ other_results: judgements.other_judges_average ]
-    
-    binding.pry
-    
     finalist_ids = judgements.distinct.pluck(:finalist_id)
+    other_results =  [ other_results: judgements.other_judges_average(finalist_ids) ]
     finalists_name = [ finalists_name: Finalist.where(id: finalist_ids).order("field(id, #{finalist_ids.join(',')})").map { |finalist| {id: finalist.id, name: finalist.name} } ]
     judges_count = [ count: judgements.distinct.pluck(:judge_id).length ]
 
