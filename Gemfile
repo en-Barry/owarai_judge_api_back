@@ -17,6 +17,9 @@ gem 'seed-fu'
 
 gem 'bcrypt'
 
+# where句の取得
+gem 'order_as_specified'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
