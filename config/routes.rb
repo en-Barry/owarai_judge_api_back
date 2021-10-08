@@ -10,9 +10,7 @@ Rails.application.routes.draw do
         end
       end
 
-      get 'contests/m-1gp', to: 'contests#m_1gp'
-      get 'contests/king-of-conte', to: 'contests#king_of_conte'
-      get 'contests/r-1gp', to: 'contests#r_1gp'
+      get 'contests(/:id)', to: 'contests#index'
 
       get 'finalists(/:id)', to: 'finalists#index'
     end
