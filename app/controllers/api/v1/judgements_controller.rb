@@ -34,18 +34,10 @@ class Api::V1::JudgementsController < ApplicationController
     end
   end
 
-  def m_1gp
-    
-  end
-
-  def king_of_conte
+  def results
     init_judgements = Judgement.where(contest_id: params[:id])
     edited_results = init_judgements.koc_judgements(init_judgements, current_judge, params[:id].to_i)
     render json: edited_results
-  end
-
-  def r_1gp
-    
   end
 
   private
